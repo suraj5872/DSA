@@ -11,6 +11,7 @@ public class LinearSearch {
 
     public static void main(String[] args) {
         int[] a = {2,4,5,9,7,12,16};
+        System.out.println(" ");
         System.out.println(linearSearch(a,7));
     }
 }
