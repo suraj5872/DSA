@@ -2,15 +2,13 @@ public class MoveZerosToEnd {
 
     public static int[] moveZeros(int n, int []a){
         int j=0;
-        for (int i = 1; i < n; i++) {
-            if (a[i]!=0){
-                a[j] =a[i];
+        for (int i = 0; i < n; i++) {
+            if (a[i] != 0){
+                int temp = a[i];
+                a[i] =a[j];
+                a[j] = temp;
                 j++;
             }
-        }
-        while (j<n){
-            a[j]=0;
-            j++;
         }
         return a;
     }
